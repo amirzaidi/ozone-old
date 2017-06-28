@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="fake_preview">#ff474747</color>
     <color name="actionbar_settings">#ff212121</color>
     <color name="oneplus_main_home_bg_ab">#ff212121</color>
 </resources>
