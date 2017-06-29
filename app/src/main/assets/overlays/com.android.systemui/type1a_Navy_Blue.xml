@@ -20,10 +20,10 @@
         <item>#fffafafa</item>
         <item>#dd000000</item>
         <item>#42000000</item>
-        <item>@*com.android.systemui:color/switch_thumb_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_thumb_normal_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_normal_color_dark</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
     </array>
     <array name="qs_theme_color_black">
         <item>#ffffffff</item>
@@ -41,10 +41,10 @@
         <item>#ff1d1d1d</item>
         <item>#ddffffff</item>
         <item>#42ffffff</item>
-        <item>@*com.android.systemui:color/switch_thumb_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_thumb_normal_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_normal_color_dark</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
     </array>
     <array name="qs_theme_color_android">
         <item>#ffffffff</item>
@@ -62,9 +62,9 @@
         <item>#fffafafa</item>
         <item>#dd000000</item>
         <item>#42ffffff</item>
-        <item>@*com.android.systemui:color/switch_thumb_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_thumb_normal_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_normal_color_dark</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
     </array>
 </resources>
