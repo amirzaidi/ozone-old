@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="notification_action_list">#ff202020</color>
+    <color name="notification_action_list_dark">#ff202020</color>
+
+    <bool name="config_allowNotificationIconTextTinting">false</bool>
+</resources>

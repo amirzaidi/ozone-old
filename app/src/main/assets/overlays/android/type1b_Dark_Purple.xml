@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="notification_action_list">#ff3A0371</color>
+    <color name="notification_action_list_dark">#ff3A0371</color>
+
+
+    <bool name="config_allowNotificationIconTextTinting">false</bool>
+</resources>

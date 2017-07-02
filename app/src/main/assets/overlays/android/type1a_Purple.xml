@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- ActionBar Text Color -->
+    <color name="notification_default_color">#ff9400d3</color>
+    <!-- Normal  Title Text Color ?? -->
+
+    <color name="notification_icon_default_color">#ff9400d3</color>
+    <!-- System Text Color -->
+    <color name="system_notification_accent_color">#ff9400d3</color>
+    <color name="notification_material_background_color">#ff9400d3</color>
+
+    <style name="TextAppearance.Material.Notification" parent="@*android:style/TextAppearance.Material">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff9400d3</item>
+    </style>
+
+    <style name="TextAppearance.Material.Notification.Emphasis" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textColor">#ff9400d3</item>
+    </style>
+
+    <style name="TextAppearance.Material.Notification.Info" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff9400d3</item>
+    </style>
+
+    <style name="TextAppearance.Material.Notification.Title" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff9400d3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Material.Notification.Line2" parent="@*android:style/TextAppearance.Material.Notification">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff9400d3</item>
+    </style>
+
+    <style name="TextAppearance.Material.Notification.Time" parent="@*android:style/TextAppearance.Material.Notification.Info">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff9400d3</item>
+    </style>
+
+    <style name="TextAppearance.Material.Notification.Reply" parent="@style/TextAppearance.Material.Notification">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff9400d3</item>
+    </style>
+
+
+
+</resources>
