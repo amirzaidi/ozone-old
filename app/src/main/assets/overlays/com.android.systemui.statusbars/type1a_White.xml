@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_panel_solid_background">#ffffffff</color>
+    <color name="notification_material_background_color">#ffffffff</color>
+    <color name="notification_guts_bg_color">#ffffffff</color>
+    <color name="black_system_primary_color">#ffffffff</color>
+    <color name="notification_material_background_low_priority_color">#ffffffff</color>
+    <color name="notification_shade_background_color">#ffffffff</color>
+
+
+    <color name="notification_ripple_untinted_color">#30ffffff</color>
+    <color name="notification_ripple_color_low_priority">#30ffffff</color>
+    <color name="notification_ripple_tinted_color">#30ffffff</color>
+    <color name="notification_material_background_dimmed_color">#30ffffff</color>
+</resources>
