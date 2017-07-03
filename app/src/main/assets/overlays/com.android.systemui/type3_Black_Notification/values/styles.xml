@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="TextAppearance" />
+
+    <style name="TextAppearance.NotificationGuts.Primary" parent="@*com.android.systemui:style/TextAppearance.NotificationGuts">
+
+        <item name="android:textSize">16.0sp</item>
+
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+
+    </style>
+
+    <style name="TextAppearance.NotificationGuts.Radio" parent="@*com.android.systemui:style/TextAppearance.NotificationGuts">
+
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+
+    </style>
+
+    <style name="TextAppearance.NotificationGuts" parent="@*com.android.systemui:style/TextAppearance">
+
+        <item name="android:textSize">14.0sp</item>
+
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+
+        <item name="android:fontFamily">roboto-regular</item>
+
+    </style>
+
+
+
+    <style name="TextAppearance.NotificationGuts.Secondary" parent="@*com.android.systemui:style/TextAppearance.NotificationGuts">
+
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+
+    </style>
+
+
+
+    <style name="TextAppearance.NotificationGuts.Button" parent="@*com.android.systemui:style/TextAppearance.NotificationGuts">
+
+        <item name="android:textSize">14.0sp</item>
+
+        <item name="android:textColor">@*android:color/holo_blue_dark</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:textAllCaps">true</item>
+
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+    </style>
+
+
+
+    <style name="TextAppearance.NotificationGuts.Header" parent="@style/TextAppearance.NotificationGuts">
+
+        <item name="android:textSize">12.0sp</item>
+
+        <item name="android:alpha">1.0</item>
+
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+
+    </style>
+
+
+
+
+
+</resources>

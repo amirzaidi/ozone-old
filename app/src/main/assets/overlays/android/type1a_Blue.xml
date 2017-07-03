@@ -1,49 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <!-- ActionBar Text Color -->
-    <color name="notification_default_color">#ff4885ed</color>
-    <!-- Normal  Title Text Color ?? -->
-
-    <color name="notification_icon_default_color">#ff4885ed</color>
-    <!-- System Text Color -->
-    <color name="system_notification_accent_color">#ff4885ed</color>
-
-    <style name="TextAppearance.Material.Notification" parent="@*android:style/TextAppearance.Material">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ff4885ed</item>
-    </style>
-
-    <style name="TextAppearance.Material.Notification.Emphasis" parent="@*android:style/TextAppearance.Material.Notification">
-        <item name="android:textColor">#ff4885ed</item>
-    </style>
-
-    <style name="TextAppearance.Material.Notification.Info" parent="@*android:style/TextAppearance.Material.Notification">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ff4885ed</item>
-    </style>
-
-    <style name="TextAppearance.Material.Notification.Title" parent="@*android:style/TextAppearance.Material.Notification">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ff4885ed</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextAppearance.Material.Notification.Line2" parent="@*android:style/TextAppearance.Material.Notification">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ff4885ed</item>
-    </style>
-
-    <style name="TextAppearance.Material.Notification.Time" parent="@*android:style/TextAppearance.Material.Notification.Info">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ff4885ed</item>
-    </style>
-
-    <style name="TextAppearance.Material.Notification.Reply" parent="@style/TextAppearance.Material.Notification">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ff4885ed</item>
-    </style>
 
 
+    <!-- Primary -->
+    <color name="holo_blue_light">#ff4885ed</color>
+
+    <!-- Darker -->
+    <color name="holo_blue_dark">#ff447ee1</color>
+
+    <!-- Lighter -->
+    <color name="holo_purple">#ff518bee</color>
 
 </resources>

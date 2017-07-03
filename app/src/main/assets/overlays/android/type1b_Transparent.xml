@@ -3,8 +3,8 @@
 <resources>
 
     <!-- Notification Background -->
-    <color name="holo_green_light">#ff000000</color>
+    <color name="holo_green_light">#40000000</color>
     <!-- Notification Background Transparent Parts -->
-    <color name="holo_green_dark">#30000000</color>
+    <color name="holo_green_dark">#bf000000</color>
 
 </resources>

@@ -1,10 +1,9 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
-  <!-- BatterySaver -->
 
-    <color name="battery_saver_mode_color">#fff4511e</color>
+    <color name="notification_action_list">#ffffffff</color>
+    <color name="notification_action_list_dark">#ffffffff</color>
 
 
+    <bool name="config_allowNotificationIconTextTinting">false</bool>
 </resources>
