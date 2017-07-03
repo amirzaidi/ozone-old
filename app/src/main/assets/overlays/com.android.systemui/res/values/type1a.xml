@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="android_system_primary_color">#ff212121</color>
-    <color name="black_system_primary_color">#ff1d1d1d</color>
 	<array name="qs_theme_color_white">
         <item>#ff000000</item>
         <item>#dd000000</item>
