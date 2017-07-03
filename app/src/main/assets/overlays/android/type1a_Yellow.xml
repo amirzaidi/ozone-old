@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <!-- Primary -->
+    <color name="holo_blue_light">#ffffc12f</color>
+
+    <!-- Darker -->
+    <color name="holo_blue_dark">#ffffc12f</color>
+
+    <!-- Lighter -->
+    <color name="holo_purple">#ffffc12f</color>
+
+</resources>

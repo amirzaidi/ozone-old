@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<color name="fake_preview">#ff413354</color>
+    <!-- Notification Background -->
+    <color name="holo_green_light">#ff1b1523</color>
+    <!-- Notification Background Transparent Parts -->
+    <color name="holo_green_dark">#301b1523</color>
+
+</resources>

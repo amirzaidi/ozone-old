@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
+
+    <color name="notification_icon_bg_color">@*android:color/holo_blue_light</color>
+
+    <color name="notification_material_background_media_default_color">@*android:color/holo_blue_light</color>
+
+    <color name="system_accent_color">@*android:color/holo_blue_light</color>
+
+
+
+    <color name="notification_gear_color">@*android:color/holo_purple</color>
+
+    <color name="system_secondary_color">@*android:color/holo_purple</color>
+
+    <color name="notification_guts_secondary_slider_color">@*android:color/holo_purple</color>
+
+    <color name="op_primary_default_light">@*android:color/holo_purple</color>
+
+
+
+    <color name="notification_guts_disabled_slider_color">@*android:color/holo_blue_dark</color>
+
+    
+
     <color name="notification_panel_solid_background">@*android:color/holo_green_light</color>
     <color name="notification_material_background_color">@*android:color/holo_green_light</color>
     <color name="notification_guts_bg_color">@*android:color/holo_green_light</color>
-    <color name="black_system_primary_color">@*android:color/holo_green_light</color>
     <color name="notification_material_background_low_priority_color">@*android:color/holo_green_light</color>
     <color name="notification_shade_background_color">@*android:color/holo_green_light</color>
 
@@ -12,4 +35,10 @@
     <color name="notification_ripple_color_low_priority">@*android:color/holo_green_dark</color>
     <color name="notification_ripple_tinted_color">@*android:color/holo_green_dark</color>
     <color name="notification_material_background_dimmed_color">@*android:color/holo_green_dark</color>
+
+
+
+
+
+
 </resources>
