@@ -3,7 +3,7 @@
 <resources>
 	<color name="fake_preview">#ff474747</color>
     <!-- Notification Background -->
-    <color name="holo_green_light">#ff2b2b2b</color>
+    <color name="holo_green_light">#ff212121</color>
     <!-- Notification Background Transparent Parts -->
     <color name="holo_green_dark">#30000000</color>
 
