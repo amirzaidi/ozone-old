@@ -2,6 +2,6 @@
 
 <resources>
 
-    <color name="clock_white">#ff000000</color>
+    <color name="clock_white">#ffffffff</color>
 
 </resources>
