@@ -8,7 +8,7 @@
         <com.android.systemui.statusbar.AlphaOptimizedFrameLayout android:orientation="horizontal" android:id="@*com.android.systemui:id/notification_icon_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
         <com.android.keyguard.AlphaOptimizedLinearLayout android:orientation="horizontal" android:id="@*com.android.systemui:id/system_icon_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
             <include layout="@*com.android.systemui:layout/system_icons" />
-            <TextClock android:textAppearance="@*com.android.systemui:style/TextAppearance.StatusBar.Clock" android:id="@*com.android.systemui:id/clock" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:format12Hour="@*com.android.systemui:string/keyguard_widget_12_hours_format" android:format24Hour="@*com.android.systemui:string/keyguard_widget_24_hours_format" />
+            <TextClock android:textAppearance="@*com.android.systemui:style/TextAppearance.StatusBar.Clock" android:id="@*com.android.systemui:id/clock" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:format12Hour="@*com.android.systemui:string/keyguard_widget_12_hours_format" android:format24Hour="@*com.android.systemui:string/keyguard_widget_24_hours_format" />
         </com.android.keyguard.AlphaOptimizedLinearLayout>
     </LinearLayout>
     <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@*com.android.systemui:layout/highlight_hint_notification_view" />
