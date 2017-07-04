@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="op_notification_back_color_black">@*android:color/holo_green_light</color>
-    <color name="op_notification_color_message">@*android:color/holo_blue_light</color>
-    <color name="op_notification_color_title">@*android:color/holo_blue_light</color>
-	
-	<color name="primary_default_light">#ff2b2b2b</color>
+    <color name="actionbar_settings">#ff212121</color>
+    <color name="primary_default_light">#ff000000</color>
     <color name="primary_golden_light">#ff5f004b</color>
     <color name="primary_lemon_yellow_light">#ffa20909</color>
     <color name="primary_grass_green_light">#ff009385</color>
@@ -12,7 +9,7 @@
     <color name="primary_sky_blue_light">#ff162554</color>
     <color name="primary_vigour_red_light">#ff66381a</color>
     <color name="primary_fashion_pink_light">#ff9c27b0</color>
-    <color name="accent_default_light">#ff2b2b2b</color>
+    <color name="accent_default_light">#ff000000</color>
     <color name="accent_golden_light">#ff5f004b</color>
     <color name="accent_lemon_yellow_light">#ffa20909</color>
     <color name="accent_grass_green_light">#ff009385</color>
