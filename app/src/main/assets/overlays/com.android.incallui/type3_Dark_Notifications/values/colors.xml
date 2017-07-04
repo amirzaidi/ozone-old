@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="op_notification_back_color_black">@*android:color/holo_blue_light</color>
+    <color name="op_notification_back_color_black">@*android:color/holo_green_light</color>
+
+    <color name="op_notification_color_message">@*android:color/holo_blue_light</color>
+    <color name="op_notification_color_title">@*android:color/holo_blue_light</color>
 </resources>
