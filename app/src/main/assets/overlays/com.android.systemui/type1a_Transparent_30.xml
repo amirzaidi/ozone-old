@@ -8,8 +8,8 @@
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_dark</item>
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_dark</item>
         <item>#ffbbbbbb</item>
-        <item>#ff212121</item>
-        <item>#ff212121</item>
+        <item>#b3000000</item>
+        <item>#b3000000</item>
         <item>#ffbbbbbb</item>
         <item>#ffffffff</item>
         <item>#42ffffff</item>
@@ -33,8 +33,8 @@
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_dark</item>
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_dark</item>
         <item>#ffbbbbbb</item>
-        <item>#ff212121</item>
-        <item>#ff212121</item>
+        <item>#b3000000</item>
+        <item>#b3000000</item>
         <item>#ffbbbbbb</item>
         <item>#ffffffff</item>
         <item>#42ffffff</item>
@@ -58,8 +58,8 @@
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_default</item>
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_default</item>
         <item>#ffffffff</item>
-        <item>#ff212121</item>
-        <item>#ff212121</item>
+        <item>#b3000000</item>
+        <item>#b3000000</item>
         <item>#ffffffff</item>
         <item>#ffffffff</item>
         <item>#42ffffff</item>
