@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="android_system_primary_color">#4dffffff</color>
+    <color name="black_system_primary_color">#4d000000</color>
+	
+	<array name="qs_theme_color_white">
+        <item>#ffffffff</item>
+        <item>#ddffffff</item>
+        <item>#89000000</item>
+        <item>#ffaaaaaa</item>
+        <item>#4dffffff</item>
+        <item>#4dffffff</item>
+        <item>#ffaaaaaa</item>
+        <item>#ff000000</item>
+        <item>#42000000</item>
+        <item>#ff000000</item>
+        <item>#ff000000</item>
+        <item>#ffffffff</item>
+        <item>#fffafafa</item>
+        <item>#dd000000</item>
+        <item>#42000000</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
+    </array>
+    <array name="qs_theme_color_black">
+        <item>#ffffffff</item>
+        <item>#ddffffff</item>
+        <item>#89ffffff</item>
+        <item>#ffbbbbbb</item>
+        <item>#4d000000</item>
+        <item>#4d000000</item>
+        <item>#ffbbbbbb</item>
+        <item>#ffffffff</item>
+        <item>#42ffffff</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#ff2d2d2d</item>
+        <item>#ff1d1d1d</item>
+        <item>#ddffffff</item>
+        <item>#42ffffff</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
+    </array>
+    <array name="qs_theme_color_android">
+        <item>#ffffffff</item>
+        <item>#ddffffff</item>
+        <item>#89ffffff</item>
+        <item>#ffffffff</item>
+        <item>#4dffffff</item>
+        <item>#4dffffff</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#89ffffff</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#ff2d2d2d</item>
+        <item>#fffafafa</item>
+        <item>#dd000000</item>
+        <item>#42ffffff</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
+    </array>
+</resources>
