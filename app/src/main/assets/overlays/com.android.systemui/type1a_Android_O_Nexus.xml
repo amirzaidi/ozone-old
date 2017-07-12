@@ -10,36 +10,32 @@
     <color name="android_volume_panel_footer_text_color">#ff1d1d1d</color>
     <color name="android_volume_panel_expand_btn_color">#ff1d1d1d</color>
     <color name="op_primary_default_light">#ff1d1d1d</color>
-
-    <array name="qs_theme_color_white">
+	
+	<array name="qs_theme_color_white">
         <item>#ff009688</item>
         <item>#ff1d1d1d</item>
-        <item>ff1d1d1d</item>
+        <item>#ff1d1d1d</item>
         <item>#ff1d1d1d</item>
         <item>#ffe0e0e0</item>
         <item>#ffe0e0e0</item>
-        <item>#ffaaaaaa</item>
+        <item>#ffaeaeae</item>
         <item>#ff000000</item>
-        <item>#42000000</item>
+        <item>#ffaeaeae</item>
         <item>#ff1d1d1d</item>
         <item>#ff009688</item>
         <item>#ff1d1d1d</item>
-        <item>#fffafafa</item>
-        <item>#dd000000</item>
-        <item>@*com.android.systemui:color/switch_thumb_disable_color_light</item>
-        <item>@*com.android.systemui:color/switch_track_disable_color_light</item>
-        <item>@*com.android.systemui:color/switch_thumb_normal_color_light</item>
-        <item>@*com.android.systemui:color/switch_track_normal_color_light</item>
-        <item>#dd000000</item>
-        <item>#89000000</item>
+        <item>#ffe0e0e0</item>
         <item>#ff1d1d1d</item>
         <item>#ff1d1d1d</item>
-        <item>@*com.android.systemui:color/button_normal_color_light</item>
+        <item>#ffbdbdbd</item>
+        <item>#1e000000</item>
+        <item>#fff1f1f1</item>
+        <item>#42000000</item>
     </array>
     <array name="qs_theme_color_black">
-        <item>@*com.android.systemui:color/oneplus_contorl_text_color_primary_dark</item>
-        <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_dark</item>
-        <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_dark</item>
+        <item>#ffffffff</item>
+        <item>#ddffffff</item>
+        <item>#89ffffff</item>
         <item>#ffbbbbbb</item>
         <item>#ff000000</item>
         <item>#ff000000</item>
@@ -48,42 +44,34 @@
         <item>#42ffffff</item>
         <item>#ffffffff</item>
         <item>#ffffffff</item>
-        <item>#ff212121</item>
+        <item>#ff1d1d1d</item>
         <item>#ff1d1d1d</item>
         <item>#ddffffff</item>
-        <item>@*com.android.systemui:color/switch_thumb_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_disable_color_dark</item>
-        <item>@*com.android.systemui:color/switch_thumb_normal_color_dark</item>
-        <item>@*com.android.systemui:color/switch_track_normal_color_dark</item>
-        <item>#ddffffff</item>
-        <item>#89ffffff</item>
-        <item>@*com.android.systemui:color/oneplus_contorl_icon_color_active_dark</item>
-        <item>@*com.android.systemui:color/oneplus_contorl_icon_color_inactive_dark</item>
-        <item>@*com.android.systemui:color/button_normal_color_dark</item>
+        <item>#42ffffff</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
     </array>
     <array name="qs_theme_color_android">
         <item>#ff009688</item>
         <item>#ff1d1d1d</item>
-        <item>ff1d1d1d</item>
+        <item>#ff1d1d1d</item>
         <item>#ff1d1d1d</item>
         <item>#ffe0e0e0</item>
         <item>#ffe0e0e0</item>
-        <item>#ffaaaaaa</item>
+        <item>#ffaeaeae</item>
         <item>#ff000000</item>
-        <item>#42000000</item>
+        <item>#ffaeaeae</item>
         <item>#ff1d1d1d</item>
         <item>#ff009688</item>
         <item>#ff1d1d1d</item>
-        <item>#fffafafa</item>
-        <item>#dd000000</item>
-        <item>@*com.android.systemui:color/switch_thumb_disable_color_light</item>
-        <item>@*com.android.systemui:color/switch_track_disable_color_light</item>
-        <item>@*com.android.systemui:color/switch_thumb_normal_color_light</item>
-        <item>@*com.android.systemui:color/switch_track_normal_color_light</item>
-        <item>#dd000000</item>
-        <item>#89000000</item>
+        <item>#ffe0e0e0</item>
         <item>#ff1d1d1d</item>
         <item>#ff1d1d1d</item>
-        <item>@*com.android.systemui:color/button_normal_color_light</item>
+        <item>#ffbdbdbd</item>
+        <item>#1e000000</item>
+        <item>#fff1f1f1</item>
+        <item>#42000000</item>
     </array>
 </resources>

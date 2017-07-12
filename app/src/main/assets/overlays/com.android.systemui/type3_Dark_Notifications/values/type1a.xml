@@ -1,82 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
-
-<color name="op_primary_default_light">@*android:color/holo_purple</color>
-
-<array name="qs_theme_color_white">
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_primary_light</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_light</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_light</item>
-    <item>#ffaaaaaa</item>
-    <item>#fffafafa</item>
-    <item>#ffeff1f3</item>
-    <item>#ffaaaaaa</item>
-    <item>#ff000000</item>
-    <item>#42000000</item>
-    <item>#ff000000</item>
-    <item>#ff000000</item>
-    <item>#ffffffff</item>
-    <item>#fffafafa</item>
-    <item>#dd000000</item>
-    <item>@*com.android.systemui:color/switch_thumb_disable_color_light</item>
-    <item>@*com.android.systemui:color/switch_track_disable_color_light</item>
-    <item>@*com.android.systemui:color/switch_thumb_normal_color_light</item>
-    <item>@*com.android.systemui:color/switch_track_normal_color_light</item>
-    <item>#dd000000</item>
-    <item>#89000000</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_icon_color_active_light</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_icon_color_inactive_light</item>
-    <item>@*com.android.systemui:color/button_normal_color_light</item>
-</array>
-<array name="qs_theme_color_black">
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_primary_dark</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_dark</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_dark</item>
-    <item>#ffbbbbbb</item>
-    <item>#ff000000</item>
-    <item>#ff151515</item>
-    <item>#ffbbbbbb</item>
-    <item>#ffffffff</item>
-    <item>#42ffffff</item>
-    <item>#ffffffff</item>
-    <item>#ffffffff</item>
-    <item>#ff252728</item>
-    <item>#ff1d1d1d</item>
-    <item>#ddffffff</item>
-    <item>@*com.android.systemui:color/switch_thumb_disable_color_dark</item>
-    <item>@*com.android.systemui:color/switch_track_disable_color_dark</item>
-    <item>@*com.android.systemui:color/switch_thumb_normal_color_dark</item>
-    <item>@*com.android.systemui:color/switch_track_normal_color_dark</item>
-    <item>#ddffffff</item>
-    <item>#89ffffff</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_icon_color_active_dark</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_icon_color_inactive_dark</item>
-    <item>@*com.android.systemui:color/button_normal_color_dark</item>
-</array>
-<array name="qs_theme_color_android">
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_primary_default</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_default</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_default</item>
-    <item>#ffffffff</item>
-    <item>#ff212121</item>
-    <item>#ff1c1c1c</item>
-    <item>#ffffffff</item>
-    <item>#ffffffff</item>
-    <item>#42ffffff</item>
-    <item>#ffffffff</item>
-    <item>#ff2196f3</item>
-    <item>#ff354150</item>
-    <item>#fffafafa</item>
-    <item>#dd000000</item>
-    <item>@*com.android.systemui:color/switch_thumb_disable_color_dark</item>
-    <item>@*com.android.systemui:color/switch_track_disable_color_dark</item>
-    <item>@*com.android.systemui:color/switch_thumb_normal_color_dark</item>
-    <item>@*com.android.systemui:color/switch_track_normal_color_dark</item>
-    <item>#ddffffff</item>
-    <item>#89ffffff</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_icon_color_active_dark</item>
-    <item>@*com.android.systemui:color/oneplus_contorl_icon_color_inactive_dark</item>
-    <item>@*com.android.systemui:color/button_normal_color_dark</item>
-</array>
+	<color name="op_primary_default_light">@*android:color/holo_purple</color>
+	
+	<array name="qs_theme_color_white">
+        <item>#ff000000</item>
+        <item>#dd000000</item>
+        <item>#89000000</item>
+        <item>#ffaaaaaa</item>
+        <item>#fffafafa</item>
+        <item>#ffeff1f3</item>
+        <item>#ffaaaaaa</item>
+        <item>#ff000000</item>
+        <item>#42000000</item>
+        <item>#ff000000</item>
+        <item>#ff000000</item>
+        <item>#ffffffff</item>
+        <item>#fffafafa</item>
+        <item>#dd000000</item>
+        <item>#42000000</item>
+        <item>#ffbdbdbd</item>
+        <item>#1e000000</item>
+        <item>#fff1f1f1</item>
+        <item>#42000000</item>
+    </array>
+    <array name="qs_theme_color_black">
+        <item>#ffffffff</item>
+        <item>#ddffffff</item>
+        <item>#89ffffff</item>
+        <item>#ffbbbbbb</item>
+        <item>#ff1d1d1d</item>
+        <item>#ff151515</item>
+        <item>#ffbbbbbb</item>
+        <item>#ffffffff</item>
+        <item>#42ffffff</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#ff252728</item>
+        <item>#ff1d1d1d</item>
+        <item>#ddffffff</item>
+        <item>#42ffffff</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
+    </array>
+    <array name="qs_theme_color_android">
+        <item>#ffffffff</item>
+        <item>#ddffffff</item>
+        <item>#89ffffff</item>
+        <item>#ffffffff</item>
+        <item>#ff212121</item>
+        <item>#ff1c1c1c</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
+        <item>#892196f3</item>
+        <item>#ffffffff</item>
+        <item>#ff2196f3</item>
+        <item>#ff354150</item>
+        <item>#fffafafa</item>
+        <item>#dd000000</item>
+        <item>#42ffffff</item>
+        <item>#ff616161</item>
+        <item>#19ffffff</item>
+        <item>#ffbdbdbd</item>
+        <item>#4cffffff</item>
+    </array>
 </resources>
