@@ -22,7 +22,7 @@
     <color name="primary_lemon_yellow_dark">#ffff8c00</color>
     <color name="primary_grass_green_dark">#ff27e4a0</color>
     <color name="primary_charm_purple_dark">#ff009385</color>
-    <color name="primary_sky_blue_dark">#ff99c99f</color>
+    <color name="primary_sky_blue_dark">#ffbd33a4</color>
     <color name="primary_vigour_red_dark">#ffe52d55</color>
     <color name="primary_fashion_pink_dark">#ffbc052d</color>
     <color name="accent_default_dark">#ffecf0f1</color>
@@ -30,7 +30,7 @@
     <color name="accent_lemon_yellow_dark">#ffff8c00</color>
     <color name="accent_grass_green_dark">#ff27e4a0</color>
     <color name="accent_charm_purple_dark">#ff009385</color>
-    <color name="accent_sky_blue_dark">#ff99c99f</color>
+    <color name="accent_sky_blue_dark">#ffbd33a4</color>
     <color name="accent_vigour_red_dark">#ffe52d55</color>
     <color name="accent_fashion_pink_dark">#ffbc052d</color>
 </resources>
