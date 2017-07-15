@@ -8,7 +8,7 @@
  * visit https://creativecommons.org/licenses/by-nc-sa/4.0/.
  */
 
-package de.spiritcroc.defaultdarktheme_oms.about;
+package com.ungeeked.ozone.about;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -18,7 +18,7 @@ import android.os.Bundle;
 public class AboutActivity extends Activity {
 
     static final String SUBSTRATUM_PACKAGE_NAME = "projekt.substratum";
-    static final String THEME_PACKAGE_NAME = "de.spiritcroc.defaultdarktheme_oms";
+    static final String THEME_PACKAGE_NAME = "com.ungeeked.ozone";
 
     private static final boolean TEST_DEPP = false;
 

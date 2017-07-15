@@ -20,7 +20,7 @@
         tools:node="replace"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".about.AboutActivity"
+        <activity android:name="com.ungeeked.ozone.about.AboutActivity"
             android:theme="@style/AboutTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

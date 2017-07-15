@@ -8,7 +8,7 @@
  * visit https://creativecommons.org/licenses/by-nc-sa/4.0/.
  */
 
-package de.spiritcroc.defaultdarktheme_oms.about;
+package com.ungeeked.ozone.about;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-import de.spiritcroc.defaultdarktheme_oms.R;
+import substratum.theme.template.R;
 
 public class DeppFragment extends Fragment {
 

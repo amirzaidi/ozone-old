@@ -19,133 +19,63 @@
             }
         </style>
 
-        <p><a href="#variants">Variants</a><p>
-        <p><a href="#bugs">Reporting bugs</a><p>
-        <p><a href="#source">Source</a><p>
+<h1><center>Welcome to</center></h1>
+<p><center><img src="http://i.imgur.com/MnQFvra.png" alt="" width="240" height="240" /></p>
+<p><a href="#overlays">Options Explained</a></p>
+<p><a href="#install">HOW TO INSTALL</a></p>
+<p><a href="#telegram">Telegram Groups</a></p>
+<p><a href="#xda">XDA</a></p></center>
+<h2><center><font color=#27e4a0">OVERLAY OPTIONS EXPLAINED</font></center></h2>
+<p>&nbsp;</p>
+<h3><font color=#ffc12f">DEFAULT/DARK NOTIFICATIONS</font></h3>
+<p>Ozone lets you choose between default oos and dark notifications. Notifications in Android are controlled by <strong>Android System</strong> (notification text) and <strong>SystemUI</strong> (notification background). Even though the notification background options are located in <strong>Android System</strong> overlay, you must install SystemUI overlay otherwise your notification background will remain white. Additionally in OOS, call notifications are themed by <strong>Phone (com.android.incallui)</strong></p>
+<p>You need not remember all of this though. Even if you apply all the overlays with&nbsp;default notifications, your call and other notifications will remain fine :)</p>
+<p><strong><font color=#f04c40">Important: <em>Please note that theming Android System on OOS will cause phone to softboot on pressing power button. This is an issue with Legacy substratum.</font></em></strong></p>
+<p>For ambient notifications to work properly, please choose <strong>White for Ambient</strong> in notification color options.</p>
+<p>&nbsp;</p>
+<p>We have also themed a few apps like Whatsapp and Spotify for dark notifications.</p>
+<h3><font color=#ffc12f">OVERLAYS RELATED TO ACCENTS</font></h3>
+<p>The following overlays are related to Accent colors</p>
 
-        <a name="variants" />
-        <h1><b><u>Variants explained</u></b></h1>
+<li>Manage Center (com.oneplus.security)</li>
+<li>Oneplus Launcher (net.onelus.launcher)</li>
+<li>Phone Services (com.android.phone)</li>
+<li>Settings (com.android.settings)</li>
+<li>Settings (com.android.settings.icons)</li>
 
-        <a name="variantsAndroidSystem" />
-        <h2><font color="?android:attr/colorAccent">Android System</font></h2>
+<p>The <strong>Settings</strong> overlay changes the color palette selection in OOS. The "<strong>Settings Icons</strong>" overlay allows user to decide an accent of his/her choice which will be available to in all three OOS theme modes. <strong>Manage Center</strong> and <strong>Phone Services</strong> are required to theme certain submenus like Data Usage and Sim Settings in OOS. <strong>Launcher</strong> needs to the themed so that the launcher accents match&nbsp;with new accent colors.</p>
+<p>Actionbar color refers to the top grey bar when you are using default oos theme.&nbsp;</p>
+<p>Quick Settings icon accents work only in light and dark OOS theme modes and not in default mode.</p>
+<p>If QS icons accents dont change, go to Settings&gt; Display, select a different accent and switch back to your desired accent.</p>
+<h3>&nbsp;</h3>
+<p><em>Most of the other options are self explanatory but feel free to ask me on XDA if you are confused</em></p>
+<p>&nbsp;</p>
 
-        <h3>Overlay type</h3>
-        <ul>
-            <li><b>Default:</b> Use with OMS-supporting ROMs</li>
-            <li><b>RRO:</b> Use when running Substratum in legacy mode</li>
-        </ul>
+<p><a name="install"></a></p>
+<h2><center><font color=#27e4a0">HOW TO INSTALL</font></center></h2>
+<p>Installation is pretty easy, just select your desired options and tap on "Install"</p>
+<p>Switching options is a bit tricky on OOS. When you install an overlay, the old overlay isnt deleted and after reboot you keep seeing the old overlay.</p>
+<p>To overcome this, there are two ways:</p>
 
-        <h3>Notifications</h3>
-        <b><font color="?attr/colorWarning">Make sure you are using a dark variant in <a href="#variantsSystemUI"><font color="?attr/colorWarning">SystemUI</font></a> as well when switching to a dark variant here!</font></b>
-        <ul>
-            <li><b>Default:</b> Light notifications (ensure readability for all applications)</li>
-            <li><b>Dark:</b> Dark notifications</li>
-            <li><b>Dark legacy:</b> Use if your ROM doesn&#39;t have the latest OMS commits or if you don&#39;t like dynamic notification title/icon colors</li>
-        </ul>
+<li><strong><font color=#ffc12f">Installing all overlays again:</strong></font> It is an ideal method if you are making multiple changes or are new to substratum. Open Ozone in substratum and select ALL the overlays and options that you want (not just the ones you want to change but all of them)&nbsp;Before pressing install, enable "remove all existing". After reboot your new overlays will be installed</li>
+<li><strong><font color=#ffc12f">Replacing a specific overlay:</strong></font> Suppose you want to change from Left Clock to Center clock and change accent from Red to Green. The clock overlay is SystemUI Headers while Accent color options are in Settings Icons overlay. Open Substratum menu and go to over list option. Select the two overlays and uninstall them. Substratum will prompt you to reboot bit you may skip by closing the app. Open substratum again and install the two overlays you wanted and reboot.</li>
 
-        <h3>Settings accent</h3>
-        Accent color for Settings
-
-        <h3>System accent</h3>
-        Accent color for System/SystemUI
-
-        <h2><font color="?android:attr/colorAccent">Contacts</font></h2>
-        <h3>Overlay type</h3>
-        <ul>
-            <li><b>Default:</b> Use with OMS-supporting ROMs</li>
-            <li><b>RRO:</b> Use when running Substratum in legacy mode</li>
-        </ul>
-
-        <h2><font color="?android:attr/colorAccent">Files (DocumetsUI)</font></h2>
-        <h3>Android version</h3>
-        <ul>
-            <li><b>Default:</b> Use when running Android 7.* or later</li>
-            <li><b>marshmallow or before:</b> Use when running older Android versions</li>
-        </ul>
-
-        <h2><font color="?android:attr/colorAccent">Phone</font></h2>
-        <h3>Android version</h3>
-        <ul>
-            <li><b>Default:</b> Use when running Android 7.* or later</li>
-            <li><b>marshmallow or before:</b> Use when running older Android versions</li>
-        </ul>
-        <h3>App version</h3>
-        <ul>
-            <li><b>Default:</b> Select if you don&#39;t have speed dial settings (e.g. AOSP)</li>
-            <li><b>speed dial:</b> Select if you have speed dial settings (e.g. LaOS-based)</li>
-        </ul>
-
-        <h2><font color="?android:attr/colorAccent">Settings</font></h2>
-        <h3>Android version</h3>
-        <ul>
-            <li><b>Default:</b> Use when running Android 7.* or later</li>
-            <li><b>lollipop:</b> Use with older Android versions than marshmallow</li>
-            <li><b>marshmallow:</b> Use when running Android 6.*</li>
-        </ul>
-
-        <a name="variantsSystemUI" />
-        <h2><font color="?android:attr/colorAccent">SystemUI</font></h2>
-
-        <h3>Notifications</h3>
-        <b><font color="?attr/colorWarning">Make sure you are using a dark variant in <a href="#variantsAndroidSystem"><font color="?attr/colorWarning">Android System</font></a> as well when switching to a dark variant here!</font></b>
-        <ul>
-            <li><b>Default:</b> Light notifications (ensure readability for all applications)</li>
-            <li><b>Dark:</b> Dark notifications</li>
-            <li><b>Dark transparent:</b> Semi-transparent dark notifications</li>
-        </ul>
-        <h3>QS Tile title size</h3>
-        <ul>
-            <li><b>Default:</b> Keep stock title size</li>
-            <li><b>Small:</b> Reduce QS title size a little bit</li>
-        </ul>
-        <h3>QS/Volume style</h3>
-        <ul>
-            <li><b>Solid:</b> Solid background for QS and volume slider</li>
-            <li><b>Transparent:</b> Semi-transparent background for QS and volume slider</li>
-        </ul>
-
-        <h2><font color="?android:attr/colorAccent">Substratum</font></h2>
-        <h3>Style</h3>
-        <ul>
-            <li><b>Default:</b> Keep default accent colors</li>
-            <li><b>match settings:</b> Use colors that integrate with system settings</li>
-        </ul>
-
-
-        <a name="bugs" />
-        <h1><b><u>Reporting bugs</u></b></h1>
-        <p><b><font color="?attr/colorWarning">Before reporting any bugs, make sure you are using the latest version of Substratum! Also try uninstalling and re-installing the theme, and rebooting your device, as this might resolve some issues. Additionally, make sure you are using the right <a href="#variants"><font color="?attr/colorWarning">variants</font></a>!</font></b></p>
-
-        <p>When reporting bugs, please provide the following information:
-        <ul>
-            <li>ROM Version (stock ROM/custom ROM (which one)), Android version (?attr/androidVersion), release date for custom ROMs</li>
-            <li>Do you have full Substratum/OMS support or are you running Substratum in legacy mode?</li>
-            <li>Substratum version: ?attr/substratumVersion</li>
-            <li>Version of this theme: ?attr/themeVersion</li>
-            <li>The variants you selected</li>
-            <li>Information about your issue:
-                <ol type="a">
-                    <li>If some colors are odd/texts are unreadable, please provide a screenshot and describe where it was taken!</li>
-                    <li>If an app crashes, please provide a <a href="https://raw.githubusercontent.com/nathanchance/Android-Tools/master/Guides/Proper_Bug_Reporting.txt">logcat</a></li>
-                </ol>
-            </li>
-        </ul>
-        </p>
-
-        <p>There are two ways to report bugs:
-        <ol type="a">
-            <li>Send me an <a href="mailto:spiritcroc@gmail.com>email</a> (please put some text in the title so I know what the mail is about; I do more in my life than this theme)</li>
-            <li>Create an issue on the <a href="https://github.com/SpiritCroc/DefaultDarkTheme-oms/issues">github page</a></li>
-        </ol>
-
-        <b><font color="?attr/colorWarning">Don&#39;t report bugs by writing it in a review on google play, it&#39;s unlikely that I will look into it this way! REVIEWS ARE NOT FOR BUG REPORTS!</font></b>
-        </p>
-
-
-        <a name="source" />
-        <h1><b><u>Source code</u></b></h1>
-
-        <p>This app was made open source, so anybody has the possibility to improve it to their likings! Good contributions are welcome! Code can be found on <a href="https://github.com/SpiritCroc/DefaultDarkTheme-oms">github</a>.</p>
+<p>&nbsp;</p>
+<p><a name="telegram"></a></p>
+<h2><center><font color=#27e4a0">TELEGRAM</font></center></h2>
+<p>Join us on telegram. Be respectful and do not spam</p>
+<ul>
+<li><a href="https://t.me/ozonetest">Oneplus 3</a></li>
+<p>&nbsp;</p>
+<li><a href="https://t.me/joinchat/DMAcCkQOmeIfls9D4BNYEw">Oneplus 5</a></li>
+</ul>
+<p><a name="xda"></a></p>
+<h2><center><font color=#27e4a0">XDA</font></center></h2>
+<ul>
+<li><a href="https://forum.xda-developers.com/oneplus-3/themes/ozone-substratum-module-to-add-accent-t3582317">Oneplus 3</a></li>
+<p>&nbsp;</p>
+<li><a href="https://forum.xda-developers.com/oneplus-5/themes/v3-1-ozone-substratum-module-oos-t3627336">Oneplus 5</a></li>
+</ul>
 
     ]]></string>
 
@@ -165,7 +95,7 @@
 
         <h1><b><u><font color="?attr/colorWarning">Substratum not found!</font></u></b></h1>
 
-        <b>For this theme to work, you need <a href="https://play.google.com/store/apps/details?id=projekt.substratum">Substratum</a>. If you don&#39;t know what Substratum is, this theme is not an app for you! Giving it a bad review because you don&#39;t know how to use it is not fair! YOU WON&#39;T GET SUPPORT IF YOU ASK FOR IT IN A REVIEW!</b>
+        <b>For this theme to work, you need <a href="https://play.google.com/store/apps/details?id=projekt.substratum">Substratum</a>. If you don&#39;t know what Substratum is, this theme is not an app for you!</b>
     ]]></string>
 
 </resources>
