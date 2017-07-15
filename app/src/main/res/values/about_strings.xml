@@ -19,11 +19,12 @@
             }
         </style>
 
-<h1><center>Welcome to Ozone</center></h1>
+<h1><center>Welcome to</center></h1>
+<p><center><img src="http://i.imgur.com/MnQFvra.png" alt="" width="240" height="240" /></p>
 <p><a href="#overlays">Options Explained</a></p>
 <p><a href="#install">HOW TO INSTALL</a></p>
 <p><a href="#telegram">Telegram Groups</a></p>
-<p><a href="#xda">XDA</a></p>
+<p><a href="#xda">XDA</a></p></center>
 <h2><center><font color=#27e4a0">OVERLAY OPTIONS EXPLAINED</font></center></h2>
 <p>&nbsp;</p>
 <h3><font color=#ffc12f">DEFAULT/DARK NOTIFICATIONS</font></h3>
@@ -32,7 +33,7 @@
 <p><strong><font color=#f04c40">Important: <em>Please note that theming Android System on OOS will cause phone to softboot on pressing power button. This is an issue with Legacy substratum.</font></em></strong></p>
 <p>For ambient notifications to work properly, please choose <strong>White for Ambient</strong> in notification color options.</p>
 <p>&nbsp;</p>
-<p>We have also themed a few apps like whatsapp and spotify for dark notifications.</p>
+<p>We have also themed a few apps like Whatsapp and Spotify for dark notifications.</p>
 <h3><font color=#ffc12f">OVERLAYS RELATED TO ACCENTS</font></h3>
 <p>The following overlays are related to Accent colors</p>
 
@@ -56,7 +57,7 @@
 <p>Switching options is a bit tricky on OOS. When you install an overlay, the old overlay isnt deleted and after reboot you keep seeing the old overlay.</p>
 <p>To overcome this, there are two ways:</p>
 
-<li><strong><font color=#ffc12f">Installing all overlays again:</strong></font> It is an ideal method if you are making multiple changes or arenew to substratum. Open Oxone in substratum and select ALL the overlays and options that you want (not just the ones you want to change but all of them)&nbsp;Before pressing install, enable "remove all existing". After reboot your new overlays will be installed</li>
+<li><strong><font color=#ffc12f">Installing all overlays again:</strong></font> It is an ideal method if you are making multiple changes or are new to substratum. Open Ozone in substratum and select ALL the overlays and options that you want (not just the ones you want to change but all of them)&nbsp;Before pressing install, enable "remove all existing". After reboot your new overlays will be installed</li>
 <li><strong><font color=#ffc12f">Replacing a specific overlay:</strong></font> Suppose you want to change from Left Clock to Center clock and change accent from Red to Green. The clock overlay is SystemUI Headers while Accent color options are in Settings Icons overlay. Open Substratum menu and go to over list option. Select the two overlays and uninstall them. Substratum will prompt you to reboot bit you may skip by closing the app. Open substratum again and install the two overlays you wanted and reboot.</li>
 
 <p>&nbsp;</p>
