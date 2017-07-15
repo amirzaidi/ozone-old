@@ -8,7 +8,7 @@
  * visit https://creativecommons.org/licenses/by-nc-sa/4.0/.
  */
 
-package de.spiritcroc.defaultdarktheme_oms.about;
+package com.ungeeked.ozone.about;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -25,8 +25,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-import de.spiritcroc.defaultdarktheme_oms.R;
-import de.spiritcroc.defaultdarktheme_oms.SubstratumLauncher;
+import substratum.theme.template.R;
+import substratum.theme.template.SubstratumLauncher;
 
 public class AboutFragment extends Fragment {
 
@@ -39,7 +39,7 @@ public class AboutFragment extends Fragment {
         WebView aboutWebView = (WebView) v.findViewById(R.id.about_web_view);
         View openSubstratumButton = v.findViewById(R.id.open_substratum_button);
 
-        aboutWebView.setBackgroundColor(Color.TRANSPARENT);
+        aboutWebView.setBackgroundColor(Color.parseColor("#1b1523"));
         aboutWebView.loadData(styleHtml(getActivity(), R.string.about_html), "text/html", "UTF-8");
 
         openSubstratumButton.setOnClickListener(new View.OnClickListener() {
