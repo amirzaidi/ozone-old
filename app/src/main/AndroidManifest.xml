@@ -20,6 +20,16 @@
         tools:node="replace"
         tools:ignore="GoogleAppIndexingWarning">
 
+        <activity android:name="com.ungeeked.ozone.about.AboutActivity"
+            android:theme="@style/AboutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".SubstratumLauncher">
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>

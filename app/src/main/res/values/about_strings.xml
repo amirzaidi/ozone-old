@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_open_substratum">Show theme in Substratum</string>
+    <string name="button_uninstall">Uninstall</string>
+
+    <string name="unknown_version">Unknown</string>
+    <string name="versoin_name_and_code">%1$s (%2$s)</string>
+
+    <string name="about_html"><![CDATA[
+        <style media=\"screen\" type=\"text/css\">
+            body {
+                color: ?android:attr/textColorPrimary ;
+            }
+            a:link {
+                color: ?android:attr/colorAccent ;
+            }
+            a:visited {
+                color: ?android:attr/colorAccent ;
+            }
+        </style>
+
+<h1><center>Welcome to</center></h1>
+<p><center><img src="http://i.imgur.com/MnQFvra.png" alt="" width="240" height="240" /></p>
+<p><a href="#overlays">Options Explained</a></p>
+<p><a href="#install">HOW TO INSTALL</a></p>
+<p><a href="#telegram">Telegram Groups</a></p>
+<p><a href="#xda">XDA</a></p></center>
+<h2><center><font color=#27e4a0">OVERLAY OPTIONS EXPLAINED</font></center></h2>
+<p>&nbsp;</p>
+<h3><font color=#ffc12f">DEFAULT/DARK NOTIFICATIONS</font></h3>
+<p>Ozone lets you choose between default oos and dark notifications. Notifications in Android are controlled by <strong>Android System</strong> (notification text) and <strong>SystemUI</strong> (notification background). Even though the notification background options are located in <strong>Android System</strong> overlay, you must install SystemUI overlay otherwise your notification background will remain white. Additionally in OOS, call notifications are themed by <strong>Phone (com.android.incallui)</strong></p>
+<p>You need not remember all of this though. Even if you apply all the overlays with&nbsp;default notifications, your call and other notifications will remain fine :)</p>
+<p><strong><font color=#f04c40">Important: <em>Please note that theming Android System on OOS will cause phone to softboot on pressing power button. This is an issue with Legacy substratum.</font></em></strong></p>
+<p>For ambient notifications to work properly, please choose <strong>White for Ambient</strong> in notification color options.</p>
+<p>&nbsp;</p>
+<p>We have also themed a few apps like Whatsapp and Spotify for dark notifications.</p>
+<h3><font color=#ffc12f">OVERLAYS RELATED TO ACCENTS</font></h3>
+<p>The following overlays are related to Accent colors</p>
+
+<li>Manage Center (com.oneplus.security)</li>
+<li>Oneplus Launcher (net.onelus.launcher)</li>
+<li>Phone Services (com.android.phone)</li>
+<li>Settings (com.android.settings)</li>
+<li>Settings (com.android.settings.icons)</li>
+
+<p>The <strong>Settings</strong> overlay changes the color palette selection in OOS. The "<strong>Settings Icons</strong>" overlay allows user to decide an accent of his/her choice which will be available to in all three OOS theme modes. <strong>Manage Center</strong> and <strong>Phone Services</strong> are required to theme certain submenus like Data Usage and Sim Settings in OOS. <strong>Launcher</strong> needs to the themed so that the launcher accents match&nbsp;with new accent colors.</p>
+<p>Actionbar color refers to the top grey bar when you are using default oos theme.&nbsp;</p>
+<p>Quick Settings icon accents work only in light and dark OOS theme modes and not in default mode.</p>
+<p>If QS icons accents dont change, go to Settings&gt; Display, select a different accent and switch back to your desired accent.</p>
+<h3>&nbsp;</h3>
+<p><em>Most of the other options are self explanatory but feel free to ask me on XDA if you are confused</em></p>
+<p>&nbsp;</p>
+
+<p><a name="install"></a></p>
+<h2><center><font color=#27e4a0">HOW TO INSTALL</font></center></h2>
+<p>Installation is pretty easy, just select your desired options and tap on "Install"</p>
+<p>Switching options is a bit tricky on OOS. When you install an overlay, the old overlay isnt deleted and after reboot you keep seeing the old overlay.</p>
+<p>To overcome this, there are two ways:</p>
+
+<li><strong><font color=#ffc12f">Installing all overlays again:</strong></font> It is an ideal method if you are making multiple changes or are new to substratum. Open Ozone in substratum and select ALL the overlays and options that you want (not just the ones you want to change but all of them)&nbsp;Before pressing install, enable "remove all existing". After reboot your new overlays will be installed</li>
+<li><strong><font color=#ffc12f">Replacing a specific overlay:</strong></font> Suppose you want to change from Left Clock to Center clock and change accent from Red to Green. The clock overlay is SystemUI Headers while Accent color options are in Settings Icons overlay. Open Substratum menu and go to over list option. Select the two overlays and uninstall them. Substratum will prompt you to reboot bit you may skip by closing the app. Open substratum again and install the two overlays you wanted and reboot.</li>
+
+<p>&nbsp;</p>
+<p><a name="telegram"></a></p>
+<h2><center><font color=#27e4a0">TELEGRAM</font></center></h2>
+<p>Join us on telegram. Be respectful and do not spam</p>
+<ul>
+<li><a href="https://t.me/ozonetest">Oneplus 3</a></li>
+<p>&nbsp;</p>
+<li><a href="https://t.me/joinchat/DMAcCkQOmeIfls9D4BNYEw">Oneplus 5</a></li>
+</ul>
+<p><a name="xda"></a></p>
+<h2><center><font color=#27e4a0">XDA</font></center></h2>
+<ul>
+<li><a href="https://forum.xda-developers.com/oneplus-3/themes/ozone-substratum-module-to-add-accent-t3582317">Oneplus 3</a></li>
+<p>&nbsp;</p>
+<li><a href="https://forum.xda-developers.com/oneplus-5/themes/v3-1-ozone-substratum-module-oos-t3627336">Oneplus 5</a></li>
+</ul>
+
+    ]]></string>
+
+
+    <string name="depp_html"><![CDATA[
+        <style media=\"screen\" type=\"text/css\">
+            body {
+                color: ?android:attr/textColorPrimary ;
+            }
+            a:link {
+                color: ?android:attr/colorAccent ;
+            }
+            a:visited {
+                color: ?android:attr/colorAccent ;
+            }
+        </style>
+
+        <h1><b><u><font color="?attr/colorWarning">Substratum not found!</font></u></b></h1>
+
+        <b>For this theme to work, you need <a href="https://play.google.com/store/apps/details?id=projekt.substratum">Substratum</a>. If you don&#39;t know what Substratum is, this theme is not an app for you!</b>
+    ]]></string>
+
+</resources>

@@ -8,8 +8,8 @@
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_secondary_light</item>
         <item>@*com.android.systemui:color/oneplus_contorl_text_color_disable_light</item>
         <item>#ffaaaaaa</item>
-        <item>#fffafafa</item>
-        <item>#ffeff1f3</item>
+        <item>#ffffffff</item>
+        <item>#ffffffff</item>
         <item>#ffaaaaaa</item>
         <item>#ff000000</item>
         <item>#42000000</item>
