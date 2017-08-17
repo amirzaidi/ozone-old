@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SubstratumLauncher">
+        <activity android:name="substratum.theme.template.SubstratumLauncher">
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
                 <category android:name="android.intent.category.DEFAULT"/>
