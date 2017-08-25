@@ -1,1 +1,1 @@
-WARNING: Android overlay causes softboot on pressing power button. Use at your own risk
+Android overlay causes softboot. Applying SystemUI overlay is a must for dark notifs
