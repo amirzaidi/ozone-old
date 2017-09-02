@@ -20,6 +20,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.StringRes;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,8 @@ import substratum.theme.template.R;
 import substratum.theme.template.SubstratumLauncher;
 
 public class AboutFragment extends Fragment {
+
+    private static final String TAG = AboutFragment.class.getSimpleName();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,12 +45,26 @@ public class AboutFragment extends Fragment {
         aboutWebView.setBackgroundColor(Color.parseColor("#1b1523"));
         aboutWebView.loadData(styleHtml(getActivity(), R.string.about_html), "text/html", "UTF-8");
 
+        openSubstratumButton.setVisibility(
+                Util.isPackageInstalled(getActivity(), Util.SUBSTRATUM_PACKAGE_NAME)
+                        ? View.VISIBLE : View.GONE);
         openSubstratumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), SubstratumLauncher.class));
+                PackageManager pm = getActivity().getPackageManager();
+                Intent i = pm.getLaunchIntentForPackage(Util.SUBSTRATUM_PACKAGE_NAME);
+                if (i == null) {
+                    Log.e(TAG, "Could not get launch intent for substratum!");
+                    return;
+                }
+                startActivity(i);
             }
         });
+
+
+        // Remember which version of this screen the user has seen;
+        Util.markAboutSeen(getActivity());
 
         return v;
     }
@@ -61,8 +78,8 @@ public class AboutFragment extends Fragment {
         String textColorPrimary = String.format("#%06X", (0xFFFFFF & ta.getColor(0, Color.GRAY)));
         String accentColor = String.format("#%06X", (0xFFFFFF & ta.getColor(1, Color.GRAY)));
         String warning_color = String.format("#%06X", (0xFFFFFF & ta.getColor(2, Color.GRAY)));
-        String substratumVersion = getVersionName(context, AboutActivity.SUBSTRATUM_PACKAGE_NAME);
-        String themeVersion = getVersionName(context, AboutActivity.THEME_PACKAGE_NAME);
+        String substratumVersion = getVersionName(context, Util.SUBSTRATUM_PACKAGE_NAME);
+        String themeVersion = getVersionName(context, Util.THEME_PACKAGE_NAME);
         String androidVersion = getVersionName(context, null);
         ta.recycle();
         String html = context.getString(resourceId);
@@ -88,4 +105,24 @@ public class AboutFragment extends Fragment {
             return context.getString(R.string.unknown_version);
         }
     }
+
+    private void promptHideLauncher() {
+        new AlertDialog.Builder(getActivity())
+                .setTitle(R.string.hide_launcher_title)
+                .setMessage(R.string.hide_launcher_message)
+                .setPositiveButton(R.string.hide_launcher_yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Util.disableLauncher(getActivity());
+                    }
+                })
+                .setNegativeButton(R.string.hide_launcher_no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // Only dismiss
+                    }
+                })
+                .show();
+    }
+
 }
