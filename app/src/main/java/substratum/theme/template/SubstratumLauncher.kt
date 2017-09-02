@@ -15,6 +15,12 @@ import com.github.javiersantos.piracychecker.enums.InstallerID
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerError
 import com.github.javiersantos.piracychecker.enums.PirateApp
+<<<<<<< HEAD
+=======
+import de.spiritcroc.defaultdarktheme_oms.BuildConfig
+import de.spiritcroc.defaultdarktheme_oms.R
+import de.spiritcroc.defaultdarktheme_oms.about.Util
+>>>>>>> 82798db... About: more open to other recognized TEs, some restructuring etc
 import substratum.theme.template.ThemerConstants.APK_SIGNATURE_PRODUCTION
 import substratum.theme.template.ThemerConstants.BASE_64_LICENSE_KEY
 import substratum.theme.template.ThemerConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
@@ -170,6 +176,12 @@ class SubstratumLauncher : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+        if (Util.checkAboutUpdate(this)) {
+            return
+        }
+
 
         val intent = intent
         mVerified = intent.getBooleanExtra("certified", false)
