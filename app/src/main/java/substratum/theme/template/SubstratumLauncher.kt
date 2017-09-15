@@ -15,12 +15,7 @@ import com.github.javiersantos.piracychecker.enums.InstallerID
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerError
 import com.github.javiersantos.piracychecker.enums.PirateApp
-<<<<<<< HEAD
-=======
-import de.spiritcroc.defaultdarktheme_oms.BuildConfig
-import de.spiritcroc.defaultdarktheme_oms.R
-import de.spiritcroc.defaultdarktheme_oms.about.Util
->>>>>>> 82798db... About: more open to other recognized TEs, some restructuring etc
+import com.ungeeked.ozone.about.Util
 import substratum.theme.template.ThemerConstants.APK_SIGNATURE_PRODUCTION
 import substratum.theme.template.ThemerConstants.BASE_64_LICENSE_KEY
 import substratum.theme.template.ThemerConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
