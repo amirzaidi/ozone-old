@@ -12,35 +12,25 @@ package com.ungeeked.ozone.about;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 
+import substratum.theme.template.internal.SystemInformation;
+
 public class AboutActivity extends Activity {
-
-    static final String SUBSTRATUM_PACKAGE_NAME = "projekt.substratum";
-    static final String THEME_PACKAGE_NAME = "com.ungeeked.ozone";
-
-    private static final boolean TEST_DEPP = false;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = isPackageInstalled(SUBSTRATUM_PACKAGE_NAME)
+        boolean forceAbout = getIntent().getBooleanExtra(Util.EXTRA_FORCE_ABOUT, false);
+
+        Fragment fragment = forceAbout ? new ForcedAboutFragment()
+                : !Util.TEST_DEPP && SystemInformation.INSTANCE.getSelfVerifiedThemeEngines(this)
                 ? new AboutFragment()
                 : new DeppFragment();
 
         getFragmentManager().beginTransaction().replace(android.R.id.content, fragment).commit();
     }
 
-    private boolean isPackageInstalled(String package_name) {
-        if (TEST_DEPP) return false;
-        try {
-            PackageManager pm = getPackageManager();
-            pm.getPackageInfo(package_name, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
-    }
 }
+

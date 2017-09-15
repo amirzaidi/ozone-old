@@ -10,8 +10,10 @@
 
 package com.ungeeked.ozone.about;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -22,6 +24,9 @@ import android.os.Bundle;
 import android.support.annotation.StringRes;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
@@ -34,6 +39,13 @@ public class AboutFragment extends Fragment {
     private static final String TAG = AboutFragment.class.getSimpleName();
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setHasOptionsMenu(true);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -42,7 +54,7 @@ public class AboutFragment extends Fragment {
         WebView aboutWebView = (WebView) v.findViewById(R.id.about_web_view);
         View openSubstratumButton = v.findViewById(R.id.open_substratum_button);
 
-        aboutWebView.setBackgroundColor(Color.parseColor("#1b1523"));
+        aboutWebView.setBackgroundColor(Color.TRANSPARENT);
         aboutWebView.loadData(styleHtml(getActivity(), R.string.about_html), "text/html", "UTF-8");
 
         openSubstratumButton.setVisibility(
@@ -62,11 +74,28 @@ public class AboutFragment extends Fragment {
             }
         });
 
-
         // Remember which version of this screen the user has seen;
         Util.markAboutSeen(getActivity());
 
         return v;
+    }
+
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.about_hide_launcher, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_hide_launcher:
+                promptHideLauncher();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public static String styleHtml(Context context, @StringRes int resourceId) {

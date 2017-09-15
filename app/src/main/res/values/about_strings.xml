@@ -3,6 +3,8 @@
     <string name="button_open_substratum">Show theme in Substratum</string>
     <string name="button_uninstall">Uninstall</string>
 
+    <integer name="about_version">2</integer>
+
     <string name="unknown_version">Unknown</string>
     <string name="versoin_name_and_code">%1$s (%2$s)</string>
 
@@ -97,5 +99,20 @@
 
         <b>For this theme to work, you need <a href="https://play.google.com/store/apps/details?id=projekt.substratum">Substratum</a>. If you don&#39;t know what Substratum is, this theme is not an app for you!</b>
     ]]></string>
+
+    <string name="action_hide_launcher">Hide from launcher</string>
+    <string name="hide_launcher_title">Hide from launcher?</string>
+    <string name="hide_launcher_message">If you hide this theme from your launcher, you won\'t be able to access this about screen anymore. Continue?</string>
+    <string name="hide_launcher_yes">@string/real_yes</string>
+    <string name="hide_launcher_no">@string/real_no</string>
+    <string name="prompt_view_current_about_title">Show explanations?</string>
+    <string name="prompt_view_current_about_message">You haven\'t seen the latest about screen for this theme yet. If you don\'t have much experience, it\'s recommended to read some information about the available variants there. You\'ll also be able to show it later from your launcher. Show now?</string>
+    <string name="prompt_view_current_about_yes">@string/real_yes</string>
+    <string name="prompt_view_current_aboutr_no">@string/real_no</string>
+
+    <string name="action_force_about">I know what I\'m doing!</string>
+
+    <string name="real_yes">Yes</string>
+    <string name="real_no">No</string>
 
 </resources>

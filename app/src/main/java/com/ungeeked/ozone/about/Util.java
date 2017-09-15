@@ -8,7 +8,7 @@
  * visit https://creativecommons.org/licenses/by-nc-sa/4.0/.
  */
 
-package de.spiritcroc.defaultdarktheme_oms.about;
+package com.ungeeked.ozone.about;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -19,9 +19,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
-
-import de.spiritcroc.defaultdarktheme_oms.R;
 import substratum.theme.template.SubstratumLauncher;
+import substratum.theme.template.R;
 
 public final class Util {
 

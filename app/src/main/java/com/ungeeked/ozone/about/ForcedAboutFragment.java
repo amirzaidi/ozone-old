@@ -13,7 +13,7 @@ package com.ungeeked.ozone.about;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-import de.spiritcroc.defaultdarktheme_oms.R;
+import substratum.theme.template.R;
 
 public class ForcedAboutFragment extends AboutFragment {
 
