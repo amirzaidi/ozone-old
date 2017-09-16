@@ -27,10 +27,10 @@ public final class Util {
     // Don't instantiate
     private Util() {}
 
-    static final String EXTRA_FORCE_ABOUT = "de.spiritcroc.defaultdarktheme_oms.force_about";
+    static final String EXTRA_FORCE_ABOUT = "com.ungeeked.ozone.force_about";
 
     static final String SUBSTRATUM_PACKAGE_NAME = "projekt.substratum";
-    static final String THEME_PACKAGE_NAME = "de.spiritcroc.defaultdarktheme_oms";
+    static final String THEME_PACKAGE_NAME = "com.ungeeked.ozone";
 
     private static final String SP_KEY_ABOUT_VIEWED = "sc.about_viewed";
 
