@@ -30,6 +30,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Button;
+import android.widget.PopupMenu;
+import android.widget.Toast;
+
+import com.kpchuck.qstiles.ShellHelpOut;
 
 import substratum.theme.template.R;
 import substratum.theme.template.SubstratumLauncher;
@@ -37,6 +42,7 @@ import substratum.theme.template.SubstratumLauncher;
 public class AboutFragment extends Fragment {
 
     private static final String TAG = AboutFragment.class.getSimpleName();
+    Button qsCountButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +59,8 @@ public class AboutFragment extends Fragment {
 
         WebView aboutWebView = (WebView) v.findViewById(R.id.about_web_view);
         View openSubstratumButton = v.findViewById(R.id.open_substratum_button);
+        qsCountButton = v.findViewById(R.id.quickSettingsCount);
+
 
         aboutWebView.setBackgroundColor(Color.TRANSPARENT);
         aboutWebView.loadData(styleHtml(getActivity(), R.string.about_html), "text/html", "UTF-8");
@@ -73,6 +81,28 @@ public class AboutFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        qsCountButton.setVisibility(View.VISIBLE);
+        qsCountButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                PopupMenu popupMenu = new PopupMenu(getContext(), qsCountButton);
+                popupMenu.getMenuInflater().inflate(R.menu.qs_menu, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        String number = menuItem.getTitle().toString();
+                        String base = "settings put secure sysui_qqs_count ";
+                        new ShellHelpOut().runShellCommands(new String[]{base+number});
+
+                        return true;
+                    }
+                });
+                popupMenu.show();
+            }
+        });
+
+
 
         // Remember which version of this screen the user has seen;
         Util.markAboutSeen(getActivity());
