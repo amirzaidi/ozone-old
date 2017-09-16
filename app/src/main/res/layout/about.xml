@@ -5,13 +5,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/open_substratum_button"
-        android:text="@string/button_open_substratum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/button_margin" 
-		android:visibility="gone" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/open_substratum_button"
+            android:text="@string/button_open_substratum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_alignParentStart="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/quickSettingsCount"
+            android:text="Qs Header Tile Count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_margin"
+            android:layout_marginStart="@dimen/button_margin"
+            android:visibility="gone"
+            android:layout_below="@id/open_substratum_button"/>
+
+    </RelativeLayout>
 		
     <WebView
         android:id="@+id/about_web_view"
