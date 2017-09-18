@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Against black backgrounds -->
+    <color name="light_mode_icon_color_single_tone">#ffFF2400</color>
+
+    <color name="light_mode_icon_color_dual_tone_fill">#ffFF2400</color>
+
+    <!-- Against white backgrounds -->
+    <color name="dark_mode_icon_color_single_tone">#ffBF1B00</color>
+
+    <color name="dark_mode_icon_color_dual_tone_fill">#ffBF1B00</color>
+
+</resources>

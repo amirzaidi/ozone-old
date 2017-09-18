@@ -8,8 +8,8 @@
     <color name="light_mode_icon_color_dual_tone_fill">#ffffc200</color>
 
     <!-- Against white backgrounds -->
-    <color name="dark_mode_icon_color_single_tone">#996005bc</color>
+    <color name="dark_mode_icon_color_single_tone">#ff6005bc</color>
 
-    <color name="dark_mode_icon_color_dual_tone_fill">#7a6005bc</color>
+    <color name="dark_mode_icon_color_dual_tone_fill">#ff6005bc</color>
 
 </resources>
