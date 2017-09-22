@@ -68,27 +68,7 @@ public class AboutFragment extends Fragment {
                         ? View.VISIBLE : View.GONE);
         openSubstratumButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-        qsCountButton.setVisibility(View.VISIBLE);
-        qsCountButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                PopupMenu popupMenu = new PopupMenu(getContext(), qsCountButton);
-                popupMenu.getMenuInflater().inflate(R.menu.qs_menu, popupMenu.getMenu());
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem menuItem) {
-                        String number = menuItem.getTitle().toString();
-                        String base = "settings put secure sysui_qqs_count ";
-                        new ShellHelpOut().runShellCommands(new String[]{base+number});
-
-                        return true;
-                    }
-                });
-                popupMenu.show();
-
-                Intent intent = new Intent();
+            public void onClick(View view) {   Intent intent = new Intent();
                 intent = intent.setClassName(Util.SUBSTRATUM_PACKAGE_NAME,
                         "projekt.substratum.activities.launch.ThemeLaunchActivity");
                 intent.putExtra("package_name", Util.THEME_PACKAGE_NAME);
@@ -103,6 +83,27 @@ public class AboutFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+        qsCountButton.setVisibility(View.VISIBLE);
+        qsCountButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                PopupMenu popupMenu = new PopupMenu(getContext(), qsCountButton);
+                popupMenu.getMenuInflater().inflate(R.menu.qs_menu, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        String number = menuItem.getTitle().toString();
+                        String base = "settings put secure sysui_qqs_count ";
+                        new ShellHelpOut().runShellCommands(new String[]{base + number});
+
+                        return true;
+                    }
+                });
+                popupMenu.show();
+            }});
+
 
 
 
