@@ -68,39 +68,27 @@ public class AboutFragment extends Fragment {
                         ? View.VISIBLE : View.GONE);
         openSubstratumButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                /*startActivity(new Intent(getActivity(), SubstratumLauncher.class));
-                PackageManager pm = getActivity().getPackageManager();
-                Intent i = pm.getLaunchIntentForPackage(Util.SUBSTRATUM_PACKAGE_NAME);
-                if (i == null) {
-                    Log.e(TAG, "Could not get launch intent for substratum!");
-                    return;
-                }
-                startActivity(i);*/
-                String theme_mode = null;
-                String actionIntent= "projekt.substratum.THEME";
 
-
-                    Intent intentActivity = new Intent();
-                intentActivity = intentActivity.setClassName(Util.SUBSTRATUM_PACKAGE_NAME, "projekt.substratum.activities.launch.ThemeLaunchActivity");
-
-                 intentActivity.putExtra("package_name", Util.THEME_PACKAGE_NAME);
-                    intentActivity.setAction(actionIntent);
-                    intentActivity.setPackage(Util.THEME_PACKAGE_NAME);
-                    intentActivity.putExtra("calling_package_name", Util.THEME_PACKAGE_NAME);
-                    intentActivity.putExtra("oms_check", false);
-                    intentActivity.putExtra("theme_mode", theme_mode);
-                    intentActivity.putExtra("notification", false);
-                    intentActivity.putExtra("hash_passthrough", true);
-                    intentActivity.putExtra("certified", false);
-                    startActivity(intentActivity);
-                }
+            public void onClick(View view) {   Intent intent = new Intent();
+                intent = intent.setClassName(Util.SUBSTRATUM_PACKAGE_NAME,
+                        "projekt.substratum.activities.launch.ThemeLaunchActivity");
+                intent.putExtra("package_name", Util.THEME_PACKAGE_NAME);
+                intent.setAction("projekt.substratum.THEME");
+                intent.setPackage(Util.THEME_PACKAGE_NAME);
+                intent.putExtra("calling_package_name", Util.THEME_PACKAGE_NAME);
+                intent.putExtra("oms_check", false);
+                intent.putExtra("theme_mode", (String) null);
+                intent.putExtra("notification", false);
+                intent.putExtra("hash_passthrough", true);
+                intent.putExtra("certified", false);
+                startActivity(intent);
+            }
         });
 
         qsCountButton.setVisibility(View.VISIBLE);
         qsCountButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 PopupMenu popupMenu = new PopupMenu(getContext(), qsCountButton);
                 popupMenu.getMenuInflater().inflate(R.menu.qs_menu, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -108,15 +96,14 @@ public class AboutFragment extends Fragment {
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         String number = menuItem.getTitle().toString();
                         String base = "settings put secure sysui_qqs_count ";
-                        new ShellHelpOut().runShellCommands(new String[]{base+number});
+                        new ShellHelpOut().runShellCommands(new String[]{base + number});
 
                         return true;
                     }
                 });
                 popupMenu.show();
-            }
-        });
 
+            }});
 
 
         // Remember which version of this screen the user has seen;
