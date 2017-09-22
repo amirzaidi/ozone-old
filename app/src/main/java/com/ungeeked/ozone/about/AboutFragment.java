@@ -68,6 +68,7 @@ public class AboutFragment extends Fragment {
                         ? View.VISIBLE : View.GONE);
         openSubstratumButton.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {   Intent intent = new Intent();
                 intent = intent.setClassName(Util.SUBSTRATUM_PACKAGE_NAME,
                         "projekt.substratum.activities.launch.ThemeLaunchActivity");
@@ -83,7 +84,6 @@ public class AboutFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
 
         qsCountButton.setVisibility(View.VISIBLE);
         qsCountButton.setOnClickListener(new View.OnClickListener(){
@@ -102,9 +102,8 @@ public class AboutFragment extends Fragment {
                     }
                 });
                 popupMenu.show();
+
             }});
-
-
 
 
         // Remember which version of this screen the user has seen;
