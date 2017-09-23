@@ -1,5 +1,7 @@
 package com.kpchuck.qstiles;
 
+import eu.chainfire.libsuperuser.Shell;
+
 /**
  * Created by Karol Przestrzelski on 05/09/2017.
  */
@@ -8,7 +10,6 @@ public class PowerOffTileService extends android.service.quicksettings.TileServi
 
     public void onClick() {
 
-        new ShellHelpOut().runShellCommands(new String[]{"reboot -p"});
-
+        Shell.SU.run("reboot -p");
     }
 }
