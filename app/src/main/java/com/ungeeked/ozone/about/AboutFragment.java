@@ -31,10 +31,8 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.PopupMenu;
-import android.widget.Toast;
 
-import com.kpchuck.qstiles.ShellHelpOut;
-
+import eu.chainfire.libsuperuser.Shell;
 import substratum.theme.template.R;
 
 public class AboutFragment extends Fragment {
@@ -96,7 +94,7 @@ public class AboutFragment extends Fragment {
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         String number = menuItem.getTitle().toString();
                         String base = "settings put secure sysui_qqs_count ";
-                        new ShellHelpOut().runShellCommands(new String[]{base + number});
+                        Shell.SU.run(base + number);
 
                         return true;
                     }
