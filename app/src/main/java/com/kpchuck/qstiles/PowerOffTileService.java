@@ -1,5 +1,8 @@
 package com.kpchuck.qstiles;
 
+import android.content.Intent;
+import android.widget.Toast;
+
 import eu.chainfire.libsuperuser.Shell;
 
 /**
@@ -10,6 +13,20 @@ public class PowerOffTileService extends android.service.quicksettings.TileServi
 
     public void onClick() {
 
-        Shell.SU.run("reboot -p");
+        Intent it = new Intent(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
+
+        getApplicationContext().sendBroadcast(it);
+        if (Shell.SU.available()){
+            longToast("Powering Off, Please Wait...");
+            Shell.SU.run("reboot -p");
+
+        }else{
+            longToast("Ozone doesn't have root permission. Open SuperSU/magisk and try again");
+        }
+
+    }
+
+    public void longToast(String message){
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
     }
 }
