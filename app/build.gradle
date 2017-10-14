@@ -29,7 +29,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.ungeeked.ozone"
+        applicationId "amirz.ozone"
         minSdkVersion 24
         targetSdkVersion 26
         versionCode 16
@@ -55,6 +55,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.github.javiersantos:PiracyChecker:1.1'
     compile 'eu.chainfire:libsuperuser:1.0.0.+'
@@ -135,7 +136,7 @@ gradle.buildFinished {
         def encryptedAssets = new File(getProjectDir(), "src/main/assets")
         encryptedAssets.deleteDir()
 
-        tempAssets.eachFileRecurse (FileType.FILES) { file ->
+        tempAssets.eachFileRecurse(FileType.FILES) { file ->
             FileInputStream fis = new FileInputStream(file)
             File fo = new File(file.getAbsolutePath().replace("assets-temp", "assets"))
             fo.getParentFile().mkdirs()
@@ -160,3 +161,5 @@ boolean shouldEncrypt() {
 repositories {
     mavenCentral()
 }
+
+apply plugin: 'kotlin-android-extensions'
