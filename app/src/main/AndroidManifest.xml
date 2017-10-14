@@ -21,16 +21,6 @@
         tools:node="replace"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.ungeeked.ozone.about.AboutActivity"
-            android:theme="@style/AboutTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <activity android:name="substratum.theme.template.SubstratumLauncher">
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
@@ -80,30 +70,6 @@
         <meta-data
             android:name="supports_third_party_theme_systems"
             android:value="@bool/SUPPORTS_THIRD_PARTY_THEME_SYSTEMS" />
-
-        <!-- TileService for "Update the Tile UI" section -->
-
-        <service
-            android:name="com.kpchuck.qstiles.RebootTileService"
-            android:icon="@drawable/restart"
-            android:label="Reboot"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE" />
-            </intent-filter>
-        </service>
-
-        <service
-            android:name="com.kpchuck.qstiles.PowerOffTileService"
-            android:icon="@drawable/poweroff"
-            android:label="Power Off"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>
